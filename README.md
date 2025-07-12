@@ -1,108 +1,99 @@
 # 🧑‍💼 Employee Directory Web App
 
-A responsive employee management dashboard that allows users to add, edit, delete, search, filter, sort, and paginate employee records. This is a pure **HTML, CSS, and JavaScript (Vanilla)** project simulating **Freemarker** template behavior via mock data.
+A clean and responsive **Employee Management Dashboard** built using **HTML, CSS, and Vanilla JavaScript**. This app allows users to add, edit, delete, search, filter, sort, and paginate employee records. The project simulates **Freemarker template** behavior using JavaScript and localStorage.
 
 ---
 
 ## 📁 Project Structure
 
 employee-directory/
-├── index.html # Dashboard with filters, search, sort, pagination
-├── add-edit.html # Form to Add/Edit employees
+├── index.html # Dashboard view with search, filter, sort, and pagination
+├── employee-form.html # Form page for adding/editing employees
 ├── css/
-│ └── styles.css # All styles for layout and responsiveness
+│ └── styles.css # All layout and design styles
 ├── js/
-│ └── data.js,ui.js,form.js # Logic for render, search, filter, pagination, Initial mock employee data
-├── README.md # This file
-
-
+│ ├── employee-directory.js # Main logic (list, delete, search, filter, pagination)
+│ ├── employee-form.js # Add/Edit form logic
+│ └── employee-data.js # Initial mock employee data (optional)
+├── assets/
+│ └── logo.jpg # Company logo
+├── README.md
 
 ---
 
 ## 🚀 Live Demo
 
 🌐 **Hosted on Vercel**:  
-[https://employee-directory-web-interface-vert.vercel.app/]
+🔗 [https://employee-directory-web-interface-vert.vercel.app/](https://employee-directory-web-interface-vert.vercel.app/)
 
 ---
 
 ## 🛠️ How to Run Locally
 
-### ✅ Method 1: Without Any Setup
-
-> Open `index.html` directly in your browser.
+### ✅ Method 1: Directly in Browser
 
 ```bash
-git clone https://github.com/your-username/employee-directory.git
+git clone https://github.com/SalaNagaSivaVinay/Employee-Directory-Web-Interface.git
 cd employee-directory
-# Then double-click index.html
-✅ Method 2: Using Live Server in VS Code
-Install Live Server Extension
+# Then open index.html in your browser
 
-Right-click index.html → "Open with Live Server"
+✅ Method 2: Live Server (Recommended)
+1. Install the Live Server extension in VS Code
+
+2. Right-click on index.html → Click "Open with Live Server"
 
 ⚙️ Freemarker Simulation
-Although Freemarker was mentioned in the prompt, this project simulates Freemarker rendering using JavaScript by:
+Though Freemarker is usually server-side, this project mimics that functionality using:
 
-Defining mock employee data inside mockData.js
+Mock data (employee-data.js)
 
-Dynamically rendering employee cards using DOM manipulation
+DOM rendering with JavaScript
 
-Acting as if Freemarker injected the data server-side
+LocalStorage for persistent data
+
+
 
 ✨ Features
-✅ Display Employee List (Card View)
+✅ Display employee list in a clean card layout
+✅ Add new employees via a form
+✅ Edit employee details (auto-filled form via URL param)
+✅ Delete employee with one click
+✅ Search by first name, last name, or email
+✅ Filter by First Name, Department, or Role
+✅ Sort employees by Name or Department
+✅ Pagination: 10, 25, 50, or 100 records per page
+✅ Fully responsive (mobile-first)
+✅ LocalStorage data persistence
+✅ Mock data preloaded for testing
 
-✅ Add New Employee (Form Page)
-
-✅ Edit Employee (Form Pre-filled via URL param)
-
-✅ Delete Employee
-
-✅ Search by Name/Email
-
-✅ Filter by First Name, Department, Role
-
-✅ Sort by Name or Department
-
-✅ Pagination (10, 25, 50, 100 per page)
-
-✅ Responsive UI for desktop and mobile
-
-✅ Data stored using localStorage
-
-✅ Preloaded Mock Data + New User-Added Employees
 
 
 💭 Reflection
 ✅ Challenges Faced
-Managing the combination of filters, sort, and search without bugs was tricky
+Handling filters, search, sort, and pagination together smoothly
 
-Ensuring responsive layout on various screen sizes with consistent UI
+Keeping the UI responsive and consistent across devices
 
-Making localStorage data and mockData work together seamlessly
+Merging mockData and localStorage properly
 
-✅ Improvements for Future
-Improve UI styling with better design system (e.g., Tailwind or Bootstrap)
 
-Add confirmation modal for delete
 
-Add toast notifications for actions
+🚀 Improvements for Future
+Add form validation with error hints
 
-Add validations and real-time form errors
+Use a design framework like Bootstrap or Tailwind CSS
 
-Animate pagination or transitions
+Add toast notifications for add/edit/delete actions
 
-Integrate with backend (Node.js/Express or Java with actual Freemarker)
+Integrate confirmation modals for delete
+
+Backend support with Node.js + Express or real Freemarker templates
+
+Enhance UX with animations and transitions
+
 
 👨‍💻 Author
-Shaik Fairoz
-Made with ❤️ using HTML, CSS, and Vanilla JS
+Sala Naga Siva Vinay
+Made with ❤️ using HTML, CSS & JavaScript
+📧 nagasivavinay.s@gmail.com
 
-📌 Deployment
-This project is hosted using Vercel:
-
-# To deploy your own version:
-1. Push to GitHub
-2. Go to vercel.com
-3. Import your repo and deploy (No build config needed)
