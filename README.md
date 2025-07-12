@@ -24,7 +24,7 @@ employee-directory/
 ## 🚀 Live Demo
 
 🌐 **Hosted on Vercel**:  
-🔗 [https://employee-directory-web-interface-vert.vercel.app/](https://employee-directory-web-interface-vert.vercel.app/)
+🔗 [https://employee-directory-web-interface-beta.vercel.app/](https://employee-directory-web-interface-beta.vercel.app/)
 
 ---
 
